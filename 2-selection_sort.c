@@ -31,7 +31,9 @@ void selection_sort(int *array, size_t size)
 				min_h = j;
 
 		if (min_h != i)
+		{
 			swap(&array[min_h], &array[i]);
-		print_array(array, size);
+			print_array(array, size);
+		}
 	}
 }
